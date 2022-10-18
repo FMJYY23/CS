@@ -21,12 +21,12 @@ sed -i '/uci commit system/i\uci set system.@system[0].hostname='X86'' package/l
 
 sed -i "s/OpenWrt /OPWRT/g" package/lean/default-settings/files/zzz-default-settings
 
-sed -i 's/R22.8.2/Pro 22.10.1/g' package/lean/default-settings/files/zzz-default-settings
-
-#sed -i 's/"Frp 内网穿透"/"超级服务器外网穿透设置"/g' feeds/luci/applications/luci-app-frpc/po/zh-cn/frp.po
+sed -i 's/R22.10.10/Pro 22.10.10/g' package/lean/default-settings/files/zzz-default-settings
 
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' feeds/luci/applications/luci-app-turboacc/po/zh-cn/turboacc.po
 
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/lean/luci-app-unblockneteasemusic
 
 #git clone https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
+
+#sed -i 's/"Frp 内网穿透"/"超级服务器外网穿透设置"/g' feeds/luci/applications/luci-app-frpc/po/zh-cn/frp.po
